@@ -1,0 +1,62 @@
+### Listar autores
+GET http://localhost:3000/authors
+
+### Crear autor
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez",
+  "email": "juan@email.com",
+  "bio": "Escritor y desarrollador"
+}
+
+### Obtener autor por ID
+GET http://localhost:3000/authors/2
+
+### Actualizar autor
+PUT http://localhost:3000/authors/2
+Content-Type: application/json
+
+{
+  "name": "Juan Actualizado",
+  "email": "juan@email.com",
+  "bio": "Bio actualizada"
+}
+
+### Eliminar autor
+DELETE http://localhost:3000/authors/2
+
+### Listar posts
+GET http://localhost:3000/posts
+
+### Crear post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "author_id": 2,
+  "title": "Mi primer post",
+  "content": "Contenido del post",
+  "published": true
+}
+
+### Obtener post por ID
+GET http://localhost:3000/posts/12
+
+### Posts por autor
+GET http://localhost:3000/posts/author/2
+
+### Actualizar post
+PUT http://localhost:3000/posts/12
+Content-Type: application/json
+
+{
+  "author_id": 2,
+  "title": "Post actualizado",
+  "content": "Contenido actualizado",
+  "published": true
+}
+
+### Eliminar post
+DELETE http://localhost:3000/posts/12

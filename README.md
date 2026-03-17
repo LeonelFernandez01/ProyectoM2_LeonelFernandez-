@@ -67,13 +67,13 @@ CREATE DATABASE blog_api;
 ### 5. Ejecutar el script SQL de setup
 
 ```bash
-psql -U postgres -d blog_api -f sql/setup.sql
+psql -U postgres -d blog_api -f db/setup.sql
 ```
 
 ### 6. (Opcional) Cargar datos de prueba
 
 ```bash
-psql -U postgres -d blog_api -f sql/seed.sql
+psql -U postgres -d blog_api -f db/seed.sql
 ```
 
 ### 7. Iniciar el servidor
@@ -163,7 +163,7 @@ Conectarse con la URL pública de PostgreSQL:
 psql <DATABASE_PUBLIC_URL>
 ```
 
-Y ejecutar el contenido de `sql/setup.sql`.
+Y ejecutar el contenido de `db/setup.sql`.
 
 ### 4. Generar dominio público
 
